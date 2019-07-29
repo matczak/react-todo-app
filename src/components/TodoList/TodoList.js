@@ -7,7 +7,7 @@ export default function TodoList() {
     const [todoList, setTodoList] = useState([{name: 'test'}, {name: 'test2'}]);
 
     const list = todoList.map(todo => (<Todo name={todo.name}></Todo>));
-
+    
     return (
         <div className="TodoList">
             <div className="TodoList_input"></div>
