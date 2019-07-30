@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.TodoList {
+    display: flex;
+    flex-direction: column;
+    background: $color__sidebar-panel-bg;
+    color: $color__title-active;
+    border: 1px solid $color__border;
+
+    &__header {
+        position: relative;
+        flex: 0 0 auto;
+        padding: 10px 38px 9px;
+        border-bottom: 1px solid $color__border;
+        background: $color__secondary;
+        box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.08);
+        font-weight: 600;
+        line-height: 1;
+        text-align: center;
+    }
+
+    &__content {
+        padding: 6px;
+    }
+
+    &__input {
+        margin-bottom: 5px;
+    }
+}

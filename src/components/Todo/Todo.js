@@ -12,7 +12,7 @@ export default function Todo({name}) {
                 type="checkbox" 
                 value={checked}
                 onChange={() => setChecked(!checked)}/>
-            <label htmlFor={id} className={"Todo_label" + (checked ? '--checked' : '')}>{name}</label>
+            <label htmlFor={id} className={"Todo__label" + (checked ? '--checked' : '')}>{name}</label>
         </div>
     );
 }
