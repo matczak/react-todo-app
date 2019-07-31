@@ -8,8 +8,8 @@ export default function Todo({name}) {
     return (
         <div className="Todo">
             <input
-                id={id} 
-                type="checkbox" 
+                id={id}
+                type="checkbox"
                 value={checked}
                 onChange={() => setChecked(!checked)}/>
             <label htmlFor={id} className={"Todo__label" + (checked ? '--checked' : '')}>{name}</label>

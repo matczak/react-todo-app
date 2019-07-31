@@ -9,11 +9,11 @@ export default function Input({addTodo}) {
         if (!value) return;
         addTodo(value);
         setValue('');
-      };
+    };
 
     return (
         <form onSubmit={handleSubmit}>
-            <input 
+            <input
                 className="Input"
                 value={value}
                 onChange={e => setValue(e.target.value)}

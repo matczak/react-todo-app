@@ -1,12 +1,12 @@
 .Todo {
-    display: block;
-    width: 250px;
-    cursor: auto;
+  display: block;
+  width: 250px;
+  cursor: auto;
 
-    &__label {
-        
-        &--checked {
-            text-decoration: line-through;
-        }
+  &__label {
+
+    &--checked {
+      text-decoration: line-through;
     }
+  }
 }
