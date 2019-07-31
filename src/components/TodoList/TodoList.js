@@ -8,7 +8,7 @@ export default function TodoList() {
 
     const list = todoList.map((todo, index) => (<Todo name={todo.name} key={index}/>));
 
-    const newTodoHanlder = (todo) => {
+    const newTodoHandler = (todo) => {
         const newTodoList = [...todoList, {name: todo}];
         setTodoList(newTodoList);
     };
@@ -22,7 +22,7 @@ export default function TodoList() {
             </div>
             <div className="TodoList__content">
                 <div className="TodoList__input">
-                    <Input addTodo={newTodoHanlder}/>
+                    <Input addTodo={newTodoHandler}/>
                 </div>
                 <div className="TodoList__todos">
                     {list}
